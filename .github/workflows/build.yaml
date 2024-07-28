@@ -1,0 +1,16 @@
+name: Build
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: earthly/actions-setup@v1
+      - uses: actions/checkout@v2
+      - run: earthly +all
+        name: Build All
+      - uses: actions/upload-artifact@v4
+        with:
+          path: cli/*

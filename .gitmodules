@@ -1,0 +1,6 @@
+[submodule "web"]
+	path = web
+	url = https://github.com/thatpix3l/fntwo-web
+[submodule "api"]
+	path = api
+	url = https://github.com/thatpix3l/fntwo-api
